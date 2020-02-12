@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
-
     @Test
     void square() {
         Circle tester = new Circle(1, new Dot(10, 9));
