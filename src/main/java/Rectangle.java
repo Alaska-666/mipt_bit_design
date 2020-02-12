@@ -2,7 +2,7 @@ package main.java;
 
 import main.java.Dot;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     public Rectangle(Dot Dot1, Dot Dot2, Dot Dot3) {
         if (Dot1.isEqual(Dot2) || Dot1.isEqual(Dot3) || Dot2.isEqual(Dot3)) {
             throw new IllegalArgumentException("All dots must be different, but you passed several identical dots.");

@@ -2,7 +2,7 @@ package main.java;
 
 import main.java.Dot;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Shape {
 
     public Square(Dot Dot1, Dot Dot2) {
         super(Dot1, Dot2, thirdDot(Dot1, Dot2));

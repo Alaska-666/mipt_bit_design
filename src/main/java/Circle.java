@@ -1,6 +1,6 @@
 package main.java;
 
-public class Circle {
+public class Circle implements Shape {
     public Circle(int r, Dot cn) {
         if (r <= 0) {
             throw new IllegalArgumentException("You set a non-positive circle radius");
