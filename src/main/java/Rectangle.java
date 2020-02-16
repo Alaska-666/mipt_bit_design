@@ -21,7 +21,8 @@ public class Rectangle implements Shape {
     private Dot secondDot;
     private Dot thirdDot;
 
-    public double square() {
+    @Override
+    public double findArea() {
         return firstDot.distance(thirdDot) * secondDot.distance(thirdDot);
     }
 }

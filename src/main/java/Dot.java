@@ -9,19 +9,19 @@ public class Dot {
     private int x;
     private int y;
 
-    public int getX() {
+    int getX() {
         return x;
     }
 
-    public int getY() {
+    int getY() {
         return y;
     }
 
-    public double distance(Dot other) {
+    double distance(Dot other) {
         return Math.sqrt(Math.pow(other.getX() - x, 2) + Math.pow(other.getY() - y, 2));
     }
 
-    public boolean isEqual(Dot other) {
+    boolean isEqual(Dot other) {
         return other.getX() == x && other.getY() == y;
     }
 }

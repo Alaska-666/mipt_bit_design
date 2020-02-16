@@ -32,7 +32,7 @@ class RectangleTest {
     @Test
     void square() {
         Rectangle tester = new Rectangle(new Dot(0, 0), new Dot(5, 2), new Dot(5, 0));
-        assertEquals(tester.square(), 10);
+        assertEquals(tester.findArea(), 10);
     }
 
 }

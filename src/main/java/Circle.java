@@ -12,7 +12,7 @@ public class Circle implements Shape {
     private int radius;
     private Dot center;
 
-    public double square() {
+    public double findArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 }

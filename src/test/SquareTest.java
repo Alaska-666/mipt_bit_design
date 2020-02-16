@@ -10,13 +10,13 @@ class SquareTest {
     @Test
     void squarePass() {
         Square tester = new Square(new Dot(0, 0), new Dot(5, 5));
-        assertEquals(tester.square(), 25);
+        assertEquals(tester.findArea(), 25);
     }
 
     @Test
     void squarePassToo() {
         Square tester = new Square(new Dot(0, 0), new Dot(6, 0));
-        assertEquals(tester.square(), 18, DoubleMath.epsilon);
+        assertEquals(tester.findArea(), 18, DoubleMath.epsilon);
     }
 
 }

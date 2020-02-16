@@ -7,9 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
     @Test
-    void square() {
+    void area() {
         Circle tester = new Circle(1, new Dot(10, 9));
-        assertEquals(tester.square(), Math.PI);
+        assertEquals(tester.findArea(), Math.PI);
+    }
+
+    @Test
+    void areaCheck() {
+        Circle tester = new Circle(4, new Dot(10, 9));
+        assertEquals(tester.findArea(), 4 * 4 *Math.PI);
     }
 
     @Test
